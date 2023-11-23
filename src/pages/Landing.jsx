@@ -11,6 +11,9 @@ const DropDown = ({ currentMode }) => (
 const Landing = () => {
 
   return (
+
+    
+
     <div className="relative p-0">
     <div className="absolute inset-0 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${bg})` }}/>
     <div className="relative">
