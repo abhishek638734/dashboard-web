@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar} from 'react-icons/fi';
+import { FaSignOutAlt ,FaShoppingBag} from 'react-icons/fa';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
@@ -476,8 +477,12 @@ export const links = [
     links: [
       {
         name: 'dashboard',
-        icon: <FiShoppingBag />,
+        icon: <FaShoppingBag />,
       },
+      {
+        name: 'Logout',
+        icon: <FaSignOutAlt />,
+      }
     ],
   },
 
