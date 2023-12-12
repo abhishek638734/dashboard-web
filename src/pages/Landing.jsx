@@ -12,14 +12,17 @@ const DropDown = ({ currentMode }) => (
 
 const Landing = () => {
 
-  const { setSubmitButtonClicked } = useStateContext();
+  // const { setSubmitButtonClicked } = useStateContext();
   const navigate = useNavigate();
+  const { setSubmitButtonClicked, handleProfileIconVisibility } = useStateContext();
+
 
   const handleButtonClick = () => {
     // Perform any additional logic you need
     setSubmitButtonClicked(true);
 
     navigate('./Dashboard');
+    handleProfileIconVisibility(true);
   };
   return (
 

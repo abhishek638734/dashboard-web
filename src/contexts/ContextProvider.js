@@ -1,3 +1,4 @@
+// ContextProvider.js
 import React, { createContext, useContext, useState } from 'react';
 
 const StateContext = createContext();
@@ -16,6 +17,7 @@ export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initialState);
   const [submitButtonClicked, setSubmitButtonClicked] = useState(false);
+  const [profileIconVisible, setProfileIconVisible] = useState(false);
 
   const setMode = (e) => {
     setCurrentMode(e.target.value);
@@ -29,10 +31,35 @@ export const ContextProvider = ({ children }) => {
 
   const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
 
+  const handleProfileIconVisibility = (isVisible) => {
+    setProfileIconVisible(isVisible);
+  };
+
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <StateContext.Provider value={{ currentColor, currentMode, activeMenu, screenSize, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings,submitButtonClicked,
-    setSubmitButtonClicked }}>
+    <StateContext.Provider
+      value={{
+        currentColor,
+        currentMode,
+        activeMenu,
+        screenSize,
+        setScreenSize,
+        handleClick,
+        isClicked,
+        initialState,
+        setIsClicked,
+        setActiveMenu,
+        setCurrentColor,
+        setCurrentMode,
+        setMode,
+        setColor,
+        themeSettings,
+        setThemeSettings,
+        submitButtonClicked,
+        setSubmitButtonClicked,
+        profileIconVisible,
+        handleProfileIconVisibility,
+      }}
+    >
       {children}
     </StateContext.Provider>
   );
