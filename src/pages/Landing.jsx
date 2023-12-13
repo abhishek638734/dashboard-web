@@ -23,6 +23,7 @@ const Landing = () => {
 
     navigate('./Dashboard');
     handleProfileIconVisibility(true);
+    alert('User Logged In');
   };
   return (
 
