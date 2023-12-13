@@ -490,15 +490,15 @@ export const links = [
     }
    ],
  },
- {
-  title: 'Dashboard',
-  links: [
-    {
-      name: 'dashboard',
-      icon: <FaShoppingBag />,
-    },
-  ],
-},
+//  {
+//   title: 'Dashboard',
+//   links: [
+//     {
+//       name: 'dashboard',
+//       icon: <FaShoppingBag />,
+//     },
+//   ],
+// },
    {
      title: 'About Us',
      links: [
