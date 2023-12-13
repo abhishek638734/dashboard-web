@@ -1,7 +1,7 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineCalendar,AiOutlineAim, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar} from 'react-icons/fi';
-import { FaSignOutAlt ,FaShoppingBag} from 'react-icons/fa';
+import { FaSignOutAlt ,FaShoppingBag,FaHome,FaCheckCircle,} from 'react-icons/fa';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
@@ -472,54 +472,89 @@ export const employeesGrid = [
 ];
 
 export const links = [
-  {
-    title: 'Dashboard',
+ 
+ {
+  //  title: 'Pages',
+    links: [
+     {
+       name: 'Home',
+       icon: <FaHome />,
+     },
+     {
+       name: 'My Tests',
+       icon: <FaCheckCircle />,
+     },
+     {
+      name: 'Reports',
+      icon: <FiPieChart />,
+    }
+   ],
+ },
+ {
+  title: 'Dashboard',
+  links: [
+    {
+      name: 'dashboard',
+      icon: <FaShoppingBag />,
+    },
+  ],
+},
+   {
+     title: 'About Us',
+     links: [
+       {
+         name: 'Our Aim',
+         icon: <AiOutlineAim />,
+       },
+       {
+         name: 'Our Vision',
+         icon: <BsKanban />,
+       },
+     ],
+   },
+   {
+    title: 'Services',
     links: [
       {
-        name: 'dashboard',
-        icon: <FaShoppingBag />,
+        name: 'Service-1',
+        icon: <AiOutlineCalendar />,
       },
       {
+        name: 'Service-2',
+        icon: <BsKanban />,
+      },
+    ],
+  },
+  {
+    title: 'Events',
+    links: [
+      {
+        name: 'Event-1',
+        icon: <AiOutlineCalendar />,
+      },
+      {
+        name: 'Event-2',
+        icon: <BsKanban />,
+      },
+    ],
+  },
+  {
+      title: 'Others',
+      links: [
+       {
+         name: 'Contact Us',
+         icon: <IoMdContacts />,
+       },
+       {
+         name: 'Support',
+         icon: <RiContactsLine />,
+       },
+       {
         name: 'Logout',
         icon: <FaSignOutAlt />,
       }
-    ],
-  },
-
-  // {
-  //   title: 'Pages',
-  //   links: [
-  //     {
-  //       name: 'employees',
-  //       icon: <IoMdContacts />,
-  //     },
-  //     {
-  //       name: 'customers',
-  //       icon: <RiContactsLine />,
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: 'Apps',
-  //   links: [
-  //     {
-  //       name: 'calendar',
-  //       icon: <AiOutlineCalendar />,
-  //     },
-  //     {
-  //       name: 'kanban',
-  //       icon: <BsKanban />,
-  //     },
-  //     {
-  //       name: 'editor',
-  //       icon: <FiEdit />,
-  //     },
-  //     {
-  //       name: 'color-picker',
-  //       icon: <BiColorFill />,
-  //     },
-  //   ],
-  // },
+     ],
+   },
   // {
   //   title: 'Charts',
   //   links: [
