@@ -481,7 +481,7 @@ export const links = [
        icon: <FaHome />,
      },
      {
-       name: 'My Tests',
+       name: 'Tests',
        icon: <FaCheckCircle />,
      },
      {
@@ -490,24 +490,16 @@ export const links = [
     }
    ],
  },
-//  {
-//   title: 'Dashboard',
-//   links: [
-//     {
-//       name: 'dashboard',
-//       icon: <FaShoppingBag />,
-//     },
-//   ],
-// },
+
    {
      title: 'About Us',
      links: [
        {
-         name: 'Our Aim',
+         name: 'Our-Aim',
          icon: <AiOutlineAim />,
        },
        {
-         name: 'Our Vision',
+         name: 'Our-Vision',
          icon: <BsKanban />,
        },
      ],
@@ -542,7 +534,7 @@ export const links = [
       title: 'Others',
       links: [
        {
-         name: 'Contact Us',
+         name: 'Contact-Us',
          icon: <IoMdContacts />,
        },
        {
@@ -555,44 +547,6 @@ export const links = [
       }
      ],
    },
-  // {
-  //   title: 'Charts',
-  //   links: [
-  //     {
-  //       name: 'line',
-  //       icon: <AiOutlineStock />,
-  //     },
-  //     {
-  //       name: 'area',
-  //       icon: <AiOutlineAreaChart />,
-  //     },
-
-  //     {
-  //       name: 'bar',
-  //       icon: <AiOutlineBarChart />,
-  //     },
-  //     {
-  //       name: 'pie',
-  //       icon: <FiPieChart />,
-  //     },
-  //     {
-  //       name: 'financial',
-  //       icon: <RiStockLine />,
-  //     },
-  //     {
-  //       name: 'color-mapping',
-  //       icon: <BsBarChart />,
-  //     },
-  //     {
-  //       name: 'pyramid',
-  //       icon: <GiLouvrePyramid />,
-  //     },
-  //     {
-  //       name: 'stacked',
-  //       icon: <AiOutlineBarChart />,
-  //     },
-  //   ],
-  // },
 ];
 
 
