@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Landing, Dashboard, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import { Landing, Dashboard,Aim,Contactus,Event1,Event2,Home,Tests,Report,Service1,Service2,Support,Vision } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -63,29 +63,26 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Landing />)} />
+                <Route path="/" element={(<Dashboard />)} />
                 <Route path="/dashboard" element={(<Dashboard />)} />
 
-                {/* pages  */}
-                {/* <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} /> */}
+                
+                <Route path="/home" element={<Home />} />
+                <Route path="/tests" element={<Tests />} />
+                <Route path="/reports" element={<Report />} />
 
-                {/* apps  */}
-                {/* <Route path="/kanban" element={<Kanban />} />
-                <Route path="/editor" element={<Editor />} />
-                <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} /> */}
+                {/* About Us  */}
+                <Route path="/our-aim" element={<Aim />} />
+                <Route path="/our-vision" element={<Vision />} />
 
-                {/* charts  */}
-                {/* <Route path="/line" element={<Line />} />
-                <Route path="/area" element={<Area />} />
-                <Route path="/bar" element={<Bar />} />
-                <Route path="/pie" element={<Pie />} />
-                <Route path="/financial" element={<Financial />} />
-                <Route path="/color-mapping" element={<ColorMapping />} />
-                <Route path="/pyramid" element={<Pyramid />} />
-                <Route path="/stacked" element={<Stacked />} /> */}
+                <Route path="/event-1" element={<Event1 />} />
+                <Route path="/event-2" element={<Event2 />} />
+
+                <Route path="/service-1" element={<Service1 />} />
+                <Route path="/service-2" element={<Service2 />} />
+
+                <Route path="/contact-us" element={<Contactus />} />
+                <Route path="/support" element={<Support />} />
 
               </Routes>
             </div>
